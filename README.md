@@ -29,12 +29,6 @@ You can install the required dependencies by running:
 
 ```bash
 pip install -r requirements.txt
-Your requirements.txt file should include:
-```
-
-```txt
-Pillow==10.4.0
-ultralytics==8.2.89
 ```
 
 3. Add Your Image
