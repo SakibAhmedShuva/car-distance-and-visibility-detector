@@ -41,7 +41,8 @@ image_path = "/path/to/your/image.jpg"  # Update this path
 ```bash
 python car_distance_and_visibility.py
 ```
-The script will:
+
+**The script will:**
 
 Detect the car in the provided image.
 Check if the car is fully visible within the frame.
