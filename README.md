@@ -1,6 +1,6 @@
 # Car Distance and Visibility Detector
 
-This repository contains a Python application that uses YOLOv8 to detect a car in an image and checks whether the car is properly captured fully within the frame or some parts are missing. The script analyzes the distance from the camera and determines if the car is too close or too far.
+This repository contains a Python application that uses YOLOv8 to detect a car in an image and checks whether the car is properly captured fully with whole body visible or some parts are missing. The script analyzes the distance from the camera and determines if the car is too close or too far.
 
 ## Features
 
