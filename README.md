@@ -33,8 +33,9 @@ Your requirements.txt file should include:
 ```
 
 ```txt
-ultralytics
-Pillow
+Pillow==10.4.0
+ultralytics==8.2.89
+```
 
 3. Add Your Image
 
@@ -51,12 +52,14 @@ The script will:
 Detect the car in the provided image.
 Check if the car is fully visible within the frame.
 Evaluate the camera distance and provide feedback.
-Example Output
+
+**Example Output:**
 
 ```bash
 ---
-Coordinates: [50, 100, 200, 300]
-Probability: 0.92
-User is not far from the car. Processing...
-Car is captured properly. Processing...
+Coordinates: [21, 20, 622, 308]
+Probability: 0.95
+---
+Car distance is optimal.
+Car is captured properly. Not touching border.
 ```
