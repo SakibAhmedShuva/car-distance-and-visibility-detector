@@ -8,7 +8,7 @@ def check_border_touch(image_width, image_height, cords):
     if x_min <= 0 or y_min <= 0 or x_max >= image_width or y_max >= image_height:
         print("The whole car is not visible. Make sure you are not too close to the car and the whole car is being captured.")
     else:
-        print("Car is captured properly. Processing...")
+        print("Car is captured properly. Not touching border.")
 
 def calculate_area(image_width, image_height, cords):
     x_min, y_min, x_max, y_max = cords
@@ -21,10 +21,10 @@ def check_camera_distance(image_width, image_height, cords):
     if car_coverage < 1/3:
         print("It seems you are too far from the car. Get close.")
     else:
-        print("User is not far from the car. Processing...")
+        print("Car distance is optimal.")
         check_border_touch(image_width, image_height, cords)
 
-image_path = "/content/car.jpg"
+image_path = "./sample_data/car.jpg"
 image = Image.open(image_path)
 image = image.resize((640, 320))
 results = model.predict(source=image, imgsz=(640), classes=2,
