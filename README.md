@@ -58,3 +58,7 @@ Probability: 0.95
 Car distance is optimal.
 Car is captured properly. Not touching border.
 ```
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
